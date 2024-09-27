@@ -1,0 +1,113 @@
+:root{
+    --back-color: black;
+    --main-color: wheat;
+    --secondary-color: silver;
+    --font-size-large: 40px;
+    --font-size-med: 24px;
+    --font-size-small: 16px;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--back-color);
+    margin: 20px;
+}
+h1 {
+    color: black;
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+h2 {
+    color: var(--main-color);
+    font-size: var(--font-size-med);
+}
+h3 {
+    color: var(--back-color);
+    font-size: var(--font-size-med);
+}
+p1 {
+    color: var(--secondary-color);
+    font-size: var(--font-size-small);
+}
+.intro{
+    text-align: center;
+    padding-top: 75px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.flex-item1{
+    background-color: var(--main-color);
+    padding: 20px;
+    width: auto;
+    color: var(--back-color);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+}
+.flex-item2{
+    background-color: beige;
+    padding: 40px;
+    width: auto;
+    color: var(--back-color);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+}
+.flex-item3{
+    background-color: white;
+    padding: 60px;
+    width: auto;
+    color: var(--back-color);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.grid-item{
+    background-color: var(--main-color);
+    color:black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid var(--secondary-color);
+}
+.relative-container{
+    position: relative;
+    background-color: var(--main-color);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+}
+.absolute-box{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: black;
+    font-size: var(--font-size-small);
+}
+.header{
+    position: fixed;
+    top: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    color: black;
+}
